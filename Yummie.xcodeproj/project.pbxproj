@@ -56,15 +56,23 @@
 		FA3F923928D99DAC00834606 /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
-				FA3F923A28D99DAC00834606 /* AppDelegate.swift */,
-				FA3F923C28D99DAC00834606 /* SceneDelegate.swift */,
+				FA3F924E28D99E5E00834606 /* Common */,
 				FA3F923E28D99DAC00834606 /* ViewController.swift */,
-				FA3F924028D99DAC00834606 /* Main.storyboard */,
-				FA3F924328D99DAE00834606 /* Assets.xcassets */,
-				FA3F924528D99DAE00834606 /* LaunchScreen.storyboard */,
 				FA3F924828D99DAE00834606 /* Info.plist */,
 			);
 			path = Yummie;
+			sourceTree = "<group>";
+		};
+		FA3F924E28D99E5E00834606 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F923A28D99DAC00834606 /* AppDelegate.swift */,
+				FA3F923C28D99DAC00834606 /* SceneDelegate.swift */,
+				FA3F924028D99DAC00834606 /* Main.storyboard */,
+				FA3F924328D99DAE00834606 /* Assets.xcassets */,
+				FA3F924528D99DAE00834606 /* LaunchScreen.storyboard */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
