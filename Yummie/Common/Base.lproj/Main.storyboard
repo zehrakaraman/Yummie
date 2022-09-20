@@ -29,14 +29,50 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lJ1-vL-7ep">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lJ1-vL-7ep" customClass="OnboardingCollectionViewCell" customModule="Yummie" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="640"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g40-iN-hDC">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="640"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dUh-lS-FHO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="532.33333333333337"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Nny-yw-LWh">
+                                                    <rect key="frame" x="18" y="532.33333333333337" width="354" height="89.666666666666629"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery At Your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh0-jf-fbz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="28.666666666666668"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and online reservation system for restaurants and cafes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H18-eg-03n">
+                                                            <rect key="frame" x="0.0" y="46.666666666666629" width="354" height="43"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                            <color key="textColor" name="PageCntrl-Dark"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dUh-lS-FHO" firstAttribute="leading" secondItem="g40-iN-hDC" secondAttribute="leading" id="APn-NT-NaT"/>
+                                                <constraint firstItem="Nny-yw-LWh" firstAttribute="leading" secondItem="g40-iN-hDC" secondAttribute="leading" constant="18" id="JDS-OC-aS7"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nny-yw-LWh" secondAttribute="trailing" constant="18" id="Nbf-Q2-LrG"/>
+                                                <constraint firstItem="dUh-lS-FHO" firstAttribute="top" secondItem="g40-iN-hDC" secondAttribute="top" id="UQQ-Js-jhA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nny-yw-LWh" secondAttribute="bottom" constant="18" id="eST-uO-8O0"/>
+                                                <constraint firstItem="Nny-yw-LWh" firstAttribute="top" secondItem="dUh-lS-FHO" secondAttribute="bottom" id="qoI-SR-gTV"/>
+                                                <constraint firstAttribute="trailing" secondItem="dUh-lS-FHO" secondAttribute="trailing" id="ya7-qP-EQD"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="390" height="640"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLbl" destination="H18-eg-03n" id="xRV-6k-1Mh"/>
+                                            <outlet property="slideImageView" destination="dUh-lS-FHO" id="Uf9-Wo-DeQ"/>
+                                            <outlet property="slideTitleLbl" destination="Vh0-jf-fbz" id="sVN-ro-DhB"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -64,7 +100,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="VQ2-X5-AWR">
-                                <rect key="frame" x="137" y="694" width="116" height="26"/>
+                                <rect key="frame" x="137.33333333333334" y="694" width="115.66666666666666" height="26"/>
                                 <color key="pageIndicatorTintColor" name="PageCtrl"/>
                                 <color key="currentPageIndicatorTintColor" name="PageCntrl-Dark"/>
                             </pageControl>
@@ -95,7 +131,7 @@
     </scenes>
     <resources>
         <namedColor name="PageCntrl-Dark">
-            <color red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.72899997234344482" green="0.72899997234344482" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PageCtrl">
             <color red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

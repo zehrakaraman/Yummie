@@ -13,6 +13,8 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextBtn: UIButton!
     
+    var viewModel = OnboardingViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

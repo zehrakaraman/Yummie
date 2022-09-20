@@ -15,6 +15,8 @@
 		FA3F924228D99DAC00834606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F924028D99DAC00834606 /* Main.storyboard */; };
 		FA3F924428D99DAE00834606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3F924328D99DAE00834606 /* Assets.xcassets */; };
 		FA3F924728D99DAE00834606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F924528D99DAE00834606 /* LaunchScreen.storyboard */; };
+		FA5BA5AF28DA554A00C5CB5B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BA5AE28DA554A00C5CB5B /* OnboardingViewModel.swift */; };
+		FA5BA5B228DA598900C5CB5B /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BA5B128DA598900C5CB5B /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FA3F924328D99DAE00834606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3F924628D99DAE00834606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3F924828D99DAE00834606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5BA5AE28DA554A00C5CB5B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		FA5BA5B128DA598900C5CB5B /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 		FA379B5E28DA0A76006B0026 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				FA5BA5B028DA596000C5CB5B /* cell */,
 				FA379B5F28DA0AF8006B0026 /* OnboardingViewController.swift */,
+				FA5BA5AE28DA554A00C5CB5B /* OnboardingViewModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -92,9 +98,9 @@
 		FA3F923928D99DAC00834606 /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
-				FA379B6428DA15C2006B0026 /* Models */,
-				FA379B6128DA12B7006B0026 /* Extensions */,
 				FA3F924E28D99E5E00834606 /* Common */,
+				FA379B6128DA12B7006B0026 /* Extensions */,
+				FA379B6428DA15C2006B0026 /* Models */,
 				FA379B5D28DA0A67006B0026 /* Views */,
 				FA3F924828D99DAE00834606 /* Info.plist */,
 			);
@@ -111,6 +117,14 @@
 				FA3F924528D99DAE00834606 /* LaunchScreen.storyboard */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		FA5BA5B028DA596000C5CB5B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA5BA5B128DA598900C5CB5B /* OnboardingCollectionViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA379B6628DA15DB006B0026 /* OnboardingSlide.swift in Sources */,
+				FA5BA5AF28DA554A00C5CB5B /* OnboardingViewModel.swift in Sources */,
 				FA3F923B28D99DAC00834606 /* AppDelegate.swift in Sources */,
 				FA3F923D28D99DAC00834606 /* SceneDelegate.swift in Sources */,
 				FA379B6328DA12D6006B0026 /* UIView+Extension.swift in Sources */,
+				FA5BA5B228DA598900C5CB5B /* OnboardingCollectionViewCell.swift in Sources */,
 				FA379B6028DA0AF8006B0026 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
