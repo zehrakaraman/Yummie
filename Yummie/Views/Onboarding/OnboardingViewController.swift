@@ -20,6 +20,7 @@ class OnboardingViewController: UIViewController {
 
         viewModel.buttonDelegate = self
         
+        pageControl.numberOfPages = viewModel.slides.count
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,12 +29,16 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func nextBtnClicked(_ sender: Any) {
         if viewModel.currentPage == viewModel.slides.count - 1 {
-            print("Go to next screen.")
+            performSegue(withIdentifier: "toHome", sender: nil)
         } else {
             viewModel.currentPage += 1
             let indexPath = IndexPath(item: viewModel.currentPage, section: 0)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true )
         }
+    }
+    
+    @IBAction func skipBtnClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toHome", sender: nil)
     }
     
 }

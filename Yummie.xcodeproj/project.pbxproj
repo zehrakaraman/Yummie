@@ -17,6 +17,8 @@
 		FA3F924728D99DAE00834606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F924528D99DAE00834606 /* LaunchScreen.storyboard */; };
 		FA5BA5AF28DA554A00C5CB5B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BA5AE28DA554A00C5CB5B /* OnboardingViewModel.swift */; };
 		FA5BA5B228DA598900C5CB5B /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BA5B128DA598900C5CB5B /* OnboardingCollectionViewCell.swift */; };
+		FA8AEACF28DB10DF006DE4B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AEACE28DB10DF006DE4B7 /* HomeViewController.swift */; };
+		FA8AEAD128DB10EF006DE4B7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AEAD028DB10EF006DE4B7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FA3F924828D99DAE00834606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5BA5AE28DA554A00C5CB5B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		FA5BA5B128DA598900C5CB5B /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA8AEACE28DB10DF006DE4B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA8AEAD028DB10EF006DE4B7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				FA379B5E28DA0A76006B0026 /* Onboarding */,
+				FA8AEACD28DB10AF006DE4B7 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,15 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		FA8AEACD28DB10AF006DE4B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AEACE28DB10DF006DE4B7 /* HomeViewController.swift */,
+				FA8AEAD028DB10EF006DE4B7 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA379B6628DA15DB006B0026 /* OnboardingSlide.swift in Sources */,
+				FA8AEAD128DB10EF006DE4B7 /* HomeViewModel.swift in Sources */,
 				FA5BA5AF28DA554A00C5CB5B /* OnboardingViewModel.swift in Sources */,
 				FA3F923B28D99DAC00834606 /* AppDelegate.swift in Sources */,
+				FA8AEACF28DB10DF006DE4B7 /* HomeViewController.swift in Sources */,
 				FA3F923D28D99DAC00834606 /* SceneDelegate.swift in Sources */,
 				FA379B6328DA12D6006B0026 /* UIView+Extension.swift in Sources */,
 				FA5BA5B228DA598900C5CB5B /* OnboardingCollectionViewCell.swift in Sources */,
